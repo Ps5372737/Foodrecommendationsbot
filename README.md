@@ -1,5 +1,7 @@
 # Foodrecommendationsbot
-Recommend the food by country
+#Recommend the food by country
+
+
 import streamlit as st
 import pandas as pd
 
@@ -23,7 +25,6 @@ food_type = st.selectbox(
     sorted(df["Veg_Non"].dropna().unique())
 )
 
-# Recommendation button
 if st.button("Recommend Food"):
 
     result = df[
